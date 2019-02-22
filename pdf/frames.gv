@@ -1,0 +1,30 @@
+digraph G {
+"base_link" -> "back_sonar"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"odom" -> "base_link"[label="Broadcaster: /gazebo\nAverage rate: 100.206 Hz\nMost recent transform: 4957.905 ( 0.001 sec old)\nBuffer length: 4.860 sec\n"];
+"base_link" -> "front_sonar"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "p3at_front_left_axle"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"p3at_front_left_axle" -> "p3at_front_left_hub"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "p3at_front_right_axle"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"p3at_front_right_axle" -> "p3at_front_right_hub"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "top_plate"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "p3at_back_left_axle"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "p3at_back_right_axle"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "horizontal_bar_kinect"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "imu"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"horizontal_bar_kinect" -> "kinect_link"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"kinect_link" -> "kinect_optical_link"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "laser_scan_link"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"kinect_link" -> "openni_camera"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"p3at_back_left_axle" -> "p3at_back_left_hub"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"p3at_back_right_axle" -> "p3at_back_right_hub"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "vertical_bar_dx"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "vertical_bar_sx"[label="Broadcaster: /rob_st_pub\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4957.906 sec old)\nBuffer length: 0.000 sec\n"];
+"p3at_back_left_hub" -> "p3at_back_left_wheel"[label="Broadcaster: /rob_st_pub\nAverage rate: 25.207 Hz\nMost recent transform: 4957.896 ( 0.010 sec old)\nBuffer length: 4.840 sec\n"];
+"p3at_back_right_hub" -> "p3at_back_right_wheel"[label="Broadcaster: /rob_st_pub\nAverage rate: 25.207 Hz\nMost recent transform: 4957.896 ( 0.010 sec old)\nBuffer length: 4.840 sec\n"];
+"p3at_front_left_hub" -> "p3at_front_left_wheel"[label="Broadcaster: /rob_st_pub\nAverage rate: 25.207 Hz\nMost recent transform: 4957.896 ( 0.010 sec old)\nBuffer length: 4.840 sec\n"];
+"p3at_front_right_hub" -> "p3at_front_right_wheel"[label="Broadcaster: /rob_st_pub\nAverage rate: 25.207 Hz\nMost recent transform: 4957.896 ( 0.010 sec old)\nBuffer length: 4.840 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 4957.906"[ shape=plaintext ] ;
+ }->"odom";
+}
